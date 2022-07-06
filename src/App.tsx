@@ -1,24 +1,22 @@
 import React from 'react';
+import PlanetsTable from './components/PlanetsTable';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <header>
+        <h2>✨ Chase Myers 🪐</h2>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Planets from <code>swapi.dev</code>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <main>
+        <div style={{margin: "2rem"}}>
+          <PlanetsTable />
+        </div>
+      </main>
     </div>
   );
 }
